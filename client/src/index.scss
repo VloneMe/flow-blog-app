@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    * {
+        @apply m-0 p-0 box-border text-base duration-500;
+    }
+
+    .h-cover{
+        @apply min-h-[calc(100vh-80px)];
+    }
+
+    .center{
+        @apply block mx-auto;
+    }
+
+    .btn-dark{
+        @apply whitespace-nowrap bg-black text-white rounded-full py-3 px-6 text-xl capitalize hover:bg-opacity-80;
+    }
+
+    .btn-dark{
+        @apply whitespace-nowrap bg-black text-white rounded-full py-1.5 px-8 text-xl capitalize hover:bg-opacity-80;
+    }
+
+    .btn-light{
+        @apply btn-dark text-black bg-grey border-black border;
+    }
+
+    .input-box {
+        @apply w-[100%] rounded-md p-4 bg-grey pl-12 border border-grey focus:bg-transparent placeholder:text-black;
+    }
+
+    .input-icon{
+        @apply absolute left-4 top-1/2 -translate-y-1/2;
+    }
+}

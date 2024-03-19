@@ -1,7 +1,21 @@
+import { Route, Routes } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import { UserAuthForm } from "./pages/UserAuthForm";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Routes>
+      <Route  path="/"
+              element={<Navbar />}
+      >
+        <Route  path="sign-in"
+              element={<UserAuthForm type="sign-in"/>}
+        />
+        <Route  path="sign-up"
+                element={<UserAuthForm type="sign-up"/>}
+        />
+      </Route>
+      
+    </Routes>
   )
 }
