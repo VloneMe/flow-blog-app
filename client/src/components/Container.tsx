@@ -11,8 +11,8 @@ export const Container = (
 ) => {
   return (
     <div className={`max-w-[77.5rem] mx-auto 
-                      px-5 md:px-10 lg:px-15 
-                      xl:max-w-[97.5rem] 
+                      px-5 md:px-10 lg:px-1
+                      lg:max-w-[105.5rem]
                       ${className}`}
     >
         {children}

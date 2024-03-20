@@ -13,7 +13,7 @@ export const Navbar = () => {
     const [show, setShow] = useState(false);
   return (
     <>
-        <nav className={`z-10 fixed top-0 flex items-center w-full h-[70px] border-b border-grey bg-white`}
+        <nav className={`z-10 fixed top-0 flex items-center w-full h-[70px] border-b border-dark-grey bg-white border-opacity-40`}
         >
             <Container className="flex justify-between w-full items-center"
             >
